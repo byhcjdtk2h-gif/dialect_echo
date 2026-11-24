@@ -1,0 +1,44 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ECHO 乡音档案馆，以声音与手势探索十七类方言的地域色彩和粒子纹样。"><title>ECHO · 乡音有形</title><link rel="stylesheet" href="style.css?v=9"></head><body>
+<canvas id="scene" aria-hidden="true"></canvas><div class="atmosphere"></div>
+<header>
+  <a class="logo" href="./">ECHO<span>乡音有形</span></a>
+  <div class="headright">
+    <button id="gestureToggle" aria-pressed="false">开启手势</button>
+    <button id="regionToggle" aria-haspopup="dialog">声景详情</button>
+    <button id="history">声音档案 <span id="count">00</span></button>
+  </div>
+</header>
+<div class="exhibition">
+  <nav class="catalog" aria-label="方言分类">
+    <div class="sectionhead">方言索引</div>
+    <label class="sr-only" for="dialect">选择方言</label>
+    <select id="dialect"></select><div id="dialectList"></div>
+  </nav>
+  <main class="stage-wrap">
+    <div class="stage-heading">
+      <span id="artnum"></span>
+      <h1 id="dialectTitle"></h1>
+      <p id="motif"></p>
+    </div>
+    <section id="stage" aria-label="声音粒子展厅"></section>
+    <div class="gesture-help"><span id="gestureStatus" role="status"></span></div>
+  </main>
+</div>
+<dialog class="region-panel" id="regionPanel" aria-labelledby="regionName">
+  <form class="region-close" method="dialog"><button aria-label="关闭声景详情">✕</button></form>
+  <div id="regionEnglish"></div>
+  <h2 id="regionName"></h2>
+  <p id="regionPlaces"></p>
+  <h3 id="regionTitle"></h3>
+  <p id="regionDescription"></p>
+  <div class="regionElements" id="regionElements"></div>
+  <h3 class="palette-title">地域色谱</h3>
+  <div id="palette"></div>
+  <div class="language-note"><h3>语言观察</h3><p id="languageFeature"></p></div>
+</dialog>
+<section class="console"><div class="console-meta"><div class="status"><i id="lamp"></i><span id="status" role="status">等待一声乡音</span><time id="timer">00:00</time></div><div id="sampleInfo"></div></div><div class="console-controls"><select id="sampleChoice" aria-label="选择声音样本"></select><div class="actions"><button id="sample">▷ 聆听原声</button><button class="primary" id="record">● 留下乡音</button><button id="stop" disabled>停止</button></div><label class="sensitivity">波动 <input id="gain" aria-label="波动强度" type="range" min="0.4" max="3" step="0.1" value="1.4"></label></div></section>
+<section id="gesturePanel" hidden aria-label="手势摄像头预览"><div class="gesture-preview"><video id="gestureVideo" autoplay playsinline muted></video><canvas id="gestureOverlay" width="320" height="240"></canvas></div><div class="gesture-caption"><span>仅本地识别 · 不上传画面</span><button id="gestureClose" aria-label="关闭手势和摄像头">✕</button></div></section>
+<footer><span>回声计划</span><button id="about">手势与说明 ↗</button></footer>
+<aside id="drawer" hidden><div class="drawerhead"><div><small>YOUR VOICE COLLECTION</small><h2>留下的声音</h2></div><button id="close" aria-label="关闭档案">✕</button></div><p class="muted">录音保存在当前浏览器，可下载备份。旧版录音会保留原有方言标签。</p><div id="list"></div><div class="unclassified"><small>待归类原始素材</small><p>广西话 · 视频原标签，尚未注明具体地点与类别。</p><button id="unclassifiedPlay">▷ 回听广西话原声</button></div></aside>
+<dialog id="info"><h2>听见来处，看见乡音</h2><p>按参考研究表保留十七个展示单元：官话八区与其他九类。配色与地域图案是设计转译，并非方言的统一标准或专属符号。各类的代表地点、视觉取样范围与配色见「声景详情」。</p><p>部分分类暂未提供录音，可使用麦克风体验。现有录音仍来自你提供的视频，按原字幕保留样本名。视频中的“河南话”暂列于中原组作为待核实参考；“广西话”仅保留在待归类素材中。闽语配色取闽南建筑子样，不代表全闽语。</p><table class="gesture-guide"><tr><th>手势</th><th>视觉反馈</th></tr><tr><td>伸出食指，向左快滑</td><td>切换下一种方言</td></tr><tr><td>移动手掌</td><td>带动纹样上下左右移动</td></tr><tr><td>张开手掌并停留片刻</td><td>粒子缓缓飘散、淡出</td></tr><tr><td>合掌握拳</td><td>粒子回到原位，汇聚成纹样</td></tr></table><p>将单手掌心朝向摄像头。张掌时直接移动可拖动画面。拖动后可握拳、再张掌停留来触发消散。手离开后纹样缓缓归位。摄像头仅在本地识别；录音只在当前浏览器保存。</p><p class="muted">配色及地域元素来源：你提供的《十七类方言｜地域视觉与语言特征研究表》。语言分类与设计映射分别处理。</p><form method="dialog"><button>继续探索</button></form></dialog>
+<script src="dialects.js?v=6"></script><script src="motion.js?v=6"></script><script src="gesture-math.js?v=9"></script><script src="gesture.js?v=9"></script><script src="app.js?v=9"></script></body></html>
