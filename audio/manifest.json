@@ -1,0 +1,101 @@
+[
+  {
+    "id": 0,
+    "name": "广西话",
+    "file": "audio/01-guangxi.mp3",
+    "sourceStart": 2.166667,
+    "sourceEnd": 5.066667,
+    "duration": 2.9,
+    "text": "天冷了，记得加衣服"
+  },
+  {
+    "id": 1,
+    "name": "四川话（西南官话）",
+    "file": "audio/02-sichuan.mp3",
+    "sourceStart": 5.066667,
+    "sourceEnd": 8.033333,
+    "duration": 2.967,
+    "text": "天冷了，记得加衣服"
+  },
+  {
+    "id": 2,
+    "name": "广东话（粤语）",
+    "file": "audio/03-cantonese.mp3",
+    "sourceStart": 8.033333,
+    "sourceEnd": 11.066667,
+    "duration": 3.033,
+    "text": "天冷了，记得加衣服"
+  },
+  {
+    "id": 3,
+    "name": "冀鲁官话",
+    "file": "audio/04-jilu.mp3",
+    "sourceStart": 11.066667,
+    "sourceEnd": 14.066667,
+    "duration": 3.0,
+    "text": "天冷了，记得加衣服"
+  },
+  {
+    "id": 4,
+    "name": "闽中话",
+    "file": "audio/05-minzhong.mp3",
+    "sourceStart": 14.066667,
+    "sourceEnd": 17.066667,
+    "duration": 3.0,
+    "text": "天冷了，记得加衣服"
+  },
+  {
+    "id": 5,
+    "name": "贵州话（西南官话）",
+    "file": "audio/06-guizhou.mp3",
+    "sourceStart": 17.066667,
+    "sourceEnd": 20.1,
+    "duration": 3.033,
+    "text": "天冷了，记得加衣服"
+  },
+  {
+    "id": 6,
+    "name": "河南话",
+    "file": "audio/07-henan.mp3",
+    "sourceStart": 20.1,
+    "sourceEnd": 23.1,
+    "duration": 3.0,
+    "text": "天冷了，记得加衣服"
+  },
+  {
+    "id": 7,
+    "name": "闽南语",
+    "file": "audio/08-minnan.mp3",
+    "sourceStart": 23.1,
+    "sourceEnd": 26.066667,
+    "duration": 2.967,
+    "text": "天冷了，记得加衣服"
+  },
+  {
+    "id": 8,
+    "name": "云南话（西南官话）",
+    "file": "audio/09-yunnan.mp3",
+    "sourceStart": 26.066667,
+    "sourceEnd": 29.1,
+    "duration": 3.033,
+    "text": "天冷了，记得加衣服"
+  },
+  {
+    "id": 9,
+    "name": "宁夏话（兰银官话）",
+    "file": "audio/10-ningxia.mp3",
+    "sourceStart": 29.1,
+    "sourceEnd": 32.1,
+    "duration": 3.0,
+    "text": "天冷了，记得加衣服"
+  },
+  {
+    "id": 10,
+    "name": "中原官话",
+    "file": "audio/11-zhongyuan.mp3",
+    "sourceStart": 32.1,
+    "sourceEnd": 35.3,
+    "duration": 3.2,
+    "text": "天冷了，记得加衣服"
+  }
+]
